@@ -6,7 +6,6 @@ import {
   GraduationCap,
   MapPin,
   Menu,
-  MessageCircle,
   Phone,
   Star,
   Target,
@@ -14,6 +13,7 @@ import {
   Users,
   X,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
 
 // ─── Intersection Observer hook ──────────────────────────────────────────────
@@ -60,11 +60,10 @@ function Navbar() {
   return (
     <nav
       data-ocid="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-border"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? "bg-white/95 backdrop-blur-md shadow-subtle border-b border-border"
+        : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
@@ -108,11 +107,10 @@ function Navbar() {
               key={id}
               data-ocid={`navbar.${id}_link`}
               onClick={() => scrollTo(id)}
-              className={`text-sm font-medium transition-smooth ${
-                scrolled
-                  ? "text-foreground hover:text-primary"
-                  : "text-white/80 hover:text-white"
-              }`}
+              className={`text-sm font-medium transition-smooth ${scrolled
+                ? "text-foreground hover:text-primary"
+                : "text-white/80 hover:text-white"
+                }`}
             >
               {label}
             </button>
@@ -124,11 +122,10 @@ function Navbar() {
           <a
             href="tel:+919710065653"
             data-ocid="navbar.call_button"
-            className={`flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg transition-smooth ${
-              scrolled
-                ? "text-primary border border-primary/30 hover:bg-primary/5"
-                : "text-white/90 border border-white/30 hover:bg-white/10"
-            }`}
+            className={`flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-lg transition-smooth ${scrolled
+              ? "text-primary border border-primary/30 hover:bg-primary/5"
+              : "text-white/90 border border-white/30 hover:bg-white/10"
+              }`}
           >
             <Phone className="w-3.5 h-3.5" />
             +91 97100 65653
@@ -140,7 +137,7 @@ function Navbar() {
             data-ocid="navbar.whatsapp_button"
             className="flex items-center gap-1.5 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold px-4 py-1.5 rounded-lg transition-smooth shadow-subtle"
           >
-            <MessageCircle className="w-4 h-4" />
+            <FaWhatsapp className="w-4 h-4" />
             WhatsApp
           </a>
         </div>
@@ -188,7 +185,7 @@ function Navbar() {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-green-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg"
           >
-            <MessageCircle className="w-4 h-4" />
+            <FaWhatsapp className="w-4 h-4" />
             Chat on WhatsApp
           </a>
         </div>
@@ -236,9 +233,9 @@ function Hero() {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-white leading-tight mb-4 max-w-4xl"
           style={{ animation: "fade-in-up 0.6s 0.1s ease-out both" }}
         >
-          Top-Rated Mathematics
+          Best Tuition Centre for
           <br />
-          <span className="text-accent">Tuition in Chennai</span>
+          <span className="text-accent">Academic Excellence</span>
         </h1>
 
         {/* Subheading */}
@@ -261,7 +258,7 @@ function Hero() {
             data-ocid="hero.whatsapp_button"
             className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold font-poppins text-base px-7 py-3.5 rounded-xl transition-smooth shadow-elevated"
           >
-            <MessageCircle className="w-5 h-5" />
+            <FaWhatsapp className="w-5 h-5" />
             Chat on WhatsApp
           </a>
           <a
@@ -295,7 +292,7 @@ function TrustStrip() {
       className="relative z-10 -mt-12 mx-4 sm:mx-8 lg:mx-auto max-w-5xl"
     >
       <div
-        className={`glassmorphic bg-white/80 backdrop-blur-xl border border-white/60 shadow-elevated rounded-2xl px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+        className={`bg-white/95 backdrop-blur-xl border border-white shadow-[0_8px_30px_rgba(0,0,0,0.08)] rounded-3xl px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-4 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
       >
         {trustItems.map(({ icon: Icon, label }, i) => (
           <div
@@ -386,7 +383,7 @@ function SplitSection() {
             data-ocid="about.cta_button"
             className="inline-flex items-center gap-2 mt-8 gradient-primary text-white font-poppins font-semibold px-6 py-3 rounded-xl transition-smooth hover:opacity-90 shadow-elevated"
           >
-            <MessageCircle className="w-4 h-4" />
+            <FaWhatsapp className="w-4 h-4" />
             Enquire Now
           </a>
         </div>
@@ -399,21 +396,39 @@ function SplitSection() {
 const programs = [
   {
     icon: Calculator,
-    title: "Mathematics Coaching",
-    desc: "From Class 6 to Class 12 — algebra, geometry, trigonometry, calculus. Board & competitive exam focus.",
-    tag: "Classes 6–12",
+    title: "Mathematics (6th to 12th Grade)",
+    desc: "State Board, CBSE, and ICSE. From algebra to calculus, we ensure complete concept clarity.",
+    tag: "Board Exams Focus",
     image:
       "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&q=80",
     imageAlt: "Student studying mathematics with equations on board",
   },
   {
     icon: FlaskConical,
-    title: "Science Support",
-    desc: "Physics, chemistry, biology concept reinforcement. Understanding over memorization for lasting results.",
-    tag: "Classes 8–10",
+    title: "Science Subjects",
+    desc: "Physics and Chemistry support. Understanding over memorization for lasting results in both school and competitive exams.",
+    tag: "Physics & Chemistry",
     image:
       "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&q=80",
     imageAlt: "Science lab with students learning",
+  },
+  {
+    icon: Star,
+    title: "Vedic Mathematics",
+    desc: "Learn ancient techniques for ultra-fast calculations. Improves mathematical agility and builds strong numerical confidence.",
+    tag: "Speed Maths",
+    image:
+      "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=600&q=80",
+    imageAlt: "Vedic mathematics concepts",
+  },
+  {
+    icon: Target,
+    title: "Abacus (All Levels)",
+    desc: "A proven method to enhance brain development, concentration, and mental arithmetic skills for young learners.",
+    tag: "Mental Arithmetic",
+    image:
+      "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=600&q=80",
+    imageAlt: "Student using an abacus for calculations",
   },
 ];
 
@@ -488,33 +503,33 @@ function Programs() {
 // ─── Gallery ──────────────────────────────────────────────────────────────────
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&q=80",
-    alt: "Students learning",
+    src: "/gallery/image3.png",
+    alt: "Classroom teaching on digital board",
     span: "row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80",
-    alt: "Classroom session",
+    src: "/gallery/image4.png",
+    alt: "Group of students studying together",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=700&q=80",
-    alt: "Group study",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&q=80",
-    alt: "Focused student",
-    span: "row-span-2",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
-    alt: "Students at work",
+    src: "/gallery/image5.png",
+    alt: "Student doing mental arithmetic using an abacus",
     span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=700&q=80",
-    alt: "Learning space",
+    alt: "Modern learning space",
+    span: "row-span-2",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=500&q=80",
+    alt: "Focused student",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    alt: "Students at work",
     span: "",
   },
 ];
@@ -762,7 +777,7 @@ function CTABanner() {
           data-ocid="cta.whatsapp_button"
           className="relative inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-poppins font-bold text-base px-8 py-4 rounded-xl shadow-elevated transition-smooth animate-pulse-subtle"
         >
-          <MessageCircle className="w-5 h-5" />
+          <FaWhatsapp className="w-5 h-5" />
           Chat on WhatsApp Now
         </a>
       </div>
@@ -863,7 +878,7 @@ function Contact() {
                 data-ocid="contact.whatsapp_button"
                 className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-poppins font-semibold text-sm px-5 py-2.5 rounded-xl transition-smooth"
               >
-                <MessageCircle className="w-4 h-4" />
+                <FaWhatsapp className="w-4 h-4" />
                 Chat on WhatsApp
               </a>
             </div>
@@ -942,7 +957,7 @@ function FloatingWhatsApp() {
         <div className="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-30" />
         {/* Button */}
         <div className="relative w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center shadow-xl transition-smooth group-hover:scale-110">
-          <MessageCircle className="w-7 h-7 text-white" />
+          <FaWhatsapp className="w-7 h-7 text-white" />
         </div>
       </div>
       {/* Tooltip */}
