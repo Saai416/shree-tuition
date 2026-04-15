@@ -925,15 +925,7 @@ function Footer() {
         <p className="text-white/60 font-inter text-xs mb-5">+91 97100 65653</p>
         <div className="border-t border-white/10 pt-5">
           <p className="text-white/40 font-inter text-xs">
-            © {year}. Built with love using{" "}
-            <a
-              href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white/60 underline transition-smooth"
-            >
-              caffeine.ai
-            </a>
+            © {year} Shree Tuition. All rights reserved.
           </p>
         </div>
       </div>
