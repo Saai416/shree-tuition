@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { supabase } from "./lib/supabase";
+import { Loader2, Megaphone } from "lucide-react";
 
 // ─── Intersection Observer hook ──────────────────────────────────────────────
 function useInView(threshold = 0.15) {
@@ -71,25 +73,20 @@ function Navbar() {
           type="button"
           data-ocid="navbar.logo_link"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
         >
-          <div
-            className={`p-1.5 rounded-lg transition-smooth ${scrolled ? "bg-primary/10" : "bg-white/15"}`}
-          >
-            <GraduationCap
-              className={`w-5 h-5 ${scrolled ? "text-primary" : "text-white"}`}
-            />
-          </div>
-          <div className="leading-tight">
+          <img src="/logo.png" alt="Shree Tuition Logo" className="w-12 h-12 rounded-full border border-border bg-white shadow-subtle p-0.5 object-cover" />
+          <div className="leading-none text-left flex flex-col justify-center">
             <span
-              className={`font-poppins font-700 text-sm sm:text-base font-bold tracking-tight ${scrolled ? "text-foreground" : "text-white"}`}
+              className={`text-xl sm:text-2xl font-bold tracking-tight ${scrolled ? "text-primary" : "text-white"}`}
+              style={{ fontFamily: "'Playfair Display', serif", lineHeight: 1.1 }}
             >
               Shree Tuition
             </span>
             <span
-              className={`hidden sm:block text-xs ${scrolled ? "text-muted-foreground" : "text-white/70"}`}
+              className={`hidden sm:block text-[10px] mt-0.5 tracking-wider uppercase font-bold ${scrolled ? "text-primary/70" : "text-white/80"}`}
             >
-              Mathematics, Chennai
+              Quality Education for Success
             </span>
           </div>
         </button>
@@ -329,16 +326,16 @@ function SplitSection() {
         <div
           className={`transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
         >
-          <div className="relative overflow-hidden rounded-3xl rounded-tl-[3rem] shadow-elevated">
+          <div className="relative rounded-2xl shadow-elevated overflow-hidden bg-white border border-border">
             <img
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=80"
+              src="/gallery/main.jpeg"
               alt="Students studying mathematics"
-              className="w-full h-[420px] lg:h-[500px] object-cover"
+              className="w-full h-auto object-contain"
             />
             {/* Accent overlay badge */}
-            <div className="absolute bottom-6 left-6 glassmorphic-dark rounded-2xl px-5 py-3">
-              <p className="text-white font-poppins font-bold text-2xl">500+</p>
-              <p className="text-white/80 text-xs font-inter">
+            <div className="absolute bottom-4 left-4 glassmorphic-dark rounded-xl px-4 py-2 shadow-lg hidden sm:block">
+              <p className="text-white font-poppins font-bold text-xl">500+</p>
+              <p className="text-white/80 text-[10px] font-inter uppercase tracking-wider">
                 Students Mentored
               </p>
             </div>
@@ -434,6 +431,14 @@ const programs = [
 
 function Programs() {
   const { ref, visible } = useInView();
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    supabase.from('courses').select('*').order('created_at', { ascending: false }).then(res => {
+      setData(res.data || []);
+      setLoading(false);
+    });
+  }, []);
   return (
     <section
       ref={ref}
@@ -449,53 +454,40 @@ function Programs() {
           Our Programs
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-        {programs.map((p, i) => (
-          <div
-            key={p.title}
-            data-ocid={`programs.item.${i + 1}`}
-            className={`group bg-card border border-border rounded-2xl overflow-hidden shadow-subtle hover:shadow-card-hover hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-            style={{ transitionDelay: `${i * 150 + 100}ms` }}
-          >
-            {/* Card image */}
-            <div className="w-full h-48 overflow-hidden">
-              <img
-                src={p.image}
-                alt={p.imageAlt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-            {/* Card header strip */}
-            <div className="gradient-primary px-6 py-4 flex items-center gap-4">
-              <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <p.icon className="w-5 h-5 text-white" />
+      {loading ? (
+        <div className="flex justify-center p-10"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          {data.map((p, i) => (
+            <div
+              key={p.id}
+              className={`group bg-card border border-border rounded-2xl overflow-hidden shadow-subtle hover:shadow-card-hover hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              style={{ transitionDelay: `${i * 150 + 100}ms` }}
+            >
+              {p.image_url && (
+                <div className="w-full h-48 overflow-hidden">
+                  <img src={p.image_url} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                </div>
+              )}
+              <div className="gradient-primary px-6 py-4 flex items-center gap-4">
+                <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="w-5 h-5 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-white font-poppins font-semibold text-base">{p.title}</h3>
+                  <span className="text-white/70 text-xs font-inter">{p.tag}</span>
+                </div>
               </div>
-              <div>
-                <h3 className="text-white font-poppins font-semibold text-base">
-                  {p.title}
-                </h3>
-                <span className="text-white/70 text-xs font-inter">
-                  {p.tag}
-                </span>
+              <div className="px-6 py-5">
+                <p className="text-muted-foreground font-inter text-sm leading-relaxed">{p.description}</p>
+                <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-4 text-primary font-poppins font-semibold text-sm hover:gap-2.5 transition-all duration-200">
+                  Enquire about this program
+                </a>
               </div>
             </div>
-            <div className="px-6 py-5">
-              <p className="text-muted-foreground font-inter text-sm leading-relaxed">
-                {p.desc}
-              </p>
-              <a
-                href={WA_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 mt-4 text-primary font-poppins font-semibold text-sm hover:gap-2.5 transition-all duration-200"
-              >
-                Enquire about this program
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
@@ -536,6 +528,16 @@ const galleryImages = [
 
 function Gallery() {
   const { ref, visible } = useInView(0.1);
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [lightbox, setLightbox] = useState<string | null>(null);
+
+  useEffect(() => {
+    supabase.from('gallery').select('*').order('created_at', { ascending: false }).then(res => {
+      setData(res.data || []);
+      setLoading(false);
+    });
+  }, []);
   return (
     <section
       ref={ref}
@@ -556,26 +558,50 @@ function Gallery() {
           </p>
         </div>
         {/* Masonry grid */}
-        <div
-          className={`grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[200px] transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-          style={{ transitionDelay: "150ms" }}
-        >
-          {galleryImages.map((img, i) => (
-            <div
-              key={img.src}
-              data-ocid={`gallery.item.${i + 1}`}
-              className={`overflow-hidden rounded-2xl group cursor-pointer ${img.span}`}
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+        {loading ? (
+          <div className="flex justify-center p-10"><Loader2 className="w-8 h-8 animate-spin text-primary" /></div>
+        ) : (
+          <div
+            className={`columns-2 md:columns-3 gap-4 space-y-4 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+            style={{ transitionDelay: "150ms" }}
+          >
+            {data.map((img) => (
+              <div
+                key={img.id}
+                className="overflow-hidden rounded-2xl group cursor-pointer inline-block w-full border border-border shadow-subtle hover:shadow-elevated transition-shadow"
+                onClick={() => setLightbox(img.image_url)}
+              >
+                <img
+                  src={img.image_url}
+                  alt="Gallery image"
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
+
+      {lightbox && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 cursor-pointer backdrop-blur-sm"
+          onClick={() => setLightbox(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+            aria-label="Close"
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img
+            src={lightbox}
+            className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+            alt="Full view"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }
@@ -912,10 +938,10 @@ function Footer() {
   return (
     <footer data-ocid="footer.section" className="bg-primary py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="flex items-center justify-center gap-2 mb-3">
-          <GraduationCap className="w-5 h-5 text-white/70" />
-          <span className="text-white font-poppins font-semibold text-base">
-            Shree Tuition for Mathematics
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <img src="/logo.png" alt="Shree Tuition Logo" className="w-14 h-14 rounded-full border border-white/20 bg-white p-0.5 shadow-elevated object-cover" />
+          <span className="text-white font-bold text-2xl" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Shree Tuition
           </span>
         </div>
         <p className="text-white/60 font-inter text-xs mb-2">
@@ -960,6 +986,37 @@ function FloatingWhatsApp() {
   );
 }
 
+// ─── Announcements ────────────────────────────────────────────────────────────
+function Announcements() {
+  const { ref, visible } = useInView();
+  const [data, setData] = useState<any[]>([]);
+  useEffect(() => {
+    supabase.from('announcements').select('*').order('created_at', { ascending: false }).limit(3).then(res => {
+      setData(res.data || []);
+    });
+  }, []);
+
+  return (
+    <section ref={ref} className={`py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-muted/20 ${data.length === 0 ? 'hidden' : ''}`}>
+      <div className={`text-center mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+        <div className="w-8 h-1 bg-accent rounded-full mx-auto mb-4" />
+        <h2 className="text-3xl font-poppins font-bold text-foreground mb-2 flex items-center justify-center gap-3">
+          <Megaphone className="text-primary w-7 h-7" /> Latest Announcements
+        </h2>
+      </div>
+      <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+        {data.map((item) => (
+          <div key={item.id} className="bg-white border text-left p-6 rounded-xl shadow-subtle shadow-card-hover group border-l-4 border-l-primary">
+            <span className="text-xs text-primary/80 font-semibold mb-2 block">{new Date(item.created_at).toLocaleDateString()}</span>
+            <h3 className="font-poppins font-bold text-lg text-foreground mb-2">{item.title}</h3>
+            <p className="font-inter text-muted-foreground text-sm leading-relaxed">{item.message}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 // ─── App ──────────────────────────────────────────────────────────────────────
 export default function App() {
   return (
@@ -967,6 +1024,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <TrustStrip />
+      <Announcements />
       <SplitSection />
       <Programs />
       <Gallery />
