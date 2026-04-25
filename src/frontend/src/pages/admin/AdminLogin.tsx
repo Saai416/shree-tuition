@@ -57,10 +57,8 @@ export default function AdminLogin() {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-50 bg-gradient-to-br from-primary/5 via-background to-accent/5">
             <div className="max-w-md w-full bg-white p-8 rounded-2xl shadow-elevated border border-border mx-4">
-                <div className="flex justify-center mb-6">
-                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
-                        <GraduationCap className="w-7 h-7 text-primary" />
-                    </div>
+                <div className="flex justify-center mb-1">
+                    <img src="/logo.png" alt="Shree Tuition Logo" className="w-24 h-24 rounded-full border border-border p-1 bg-white shadow-sm object-cover" />
                 </div>
                 <h2 className="text-center text-2xl font-poppins font-bold text-foreground mb-6">Admin Login</h2>
 
