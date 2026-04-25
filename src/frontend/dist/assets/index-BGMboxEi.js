@@ -18505,7 +18505,23 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$j = [
+const __iconNode$l = [
+  [
+    "path",
+    {
+      d: "M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2",
+      key: "169zse"
+    }
+  ]
+];
+const Activity = createLucideIcon("activity", __iconNode$l);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$k = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   [
     "path",
@@ -18515,7 +18531,18 @@ const __iconNode$j = [
     }
   ]
 ];
-const BookOpen = createLucideIcon("book-open", __iconNode$j);
+const BookOpen = createLucideIcon("book-open", __iconNode$k);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$j = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
+];
+const Clock = createLucideIcon("clock", __iconNode$j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18523,17 +18550,6 @@ const BookOpen = createLucideIcon("book-open", __iconNode$j);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$i = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
-];
-const Clock = createLucideIcon("clock", __iconNode$i);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$h = [
   [
     "path",
     {
@@ -18544,7 +18560,19 @@ const __iconNode$h = [
   ["path", { d: "M22 10v6", key: "1lu8f3" }],
   ["path", { d: "M6 12.5V16a6 3 0 0 0 12 0v-3.5", key: "1r8lef" }]
 ];
-const GraduationCap = createLucideIcon("graduation-cap", __iconNode$h);
+const GraduationCap = createLucideIcon("graduation-cap", __iconNode$i);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$h = [
+  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", ry: "2", key: "1m3agn" }],
+  ["circle", { cx: "9", cy: "9", r: "2", key: "af1f0g" }],
+  ["path", { d: "m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21", key: "1xmnt7" }]
+];
+const Image = createLucideIcon("image", __iconNode$h);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18552,32 +18580,32 @@ const GraduationCap = createLucideIcon("graduation-cap", __iconNode$h);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$g = [
-  ["rect", { width: "18", height: "18", x: "3", y: "3", rx: "2", ry: "2", key: "1m3agn" }],
-  ["circle", { cx: "9", cy: "9", r: "2", key: "af1f0g" }],
-  ["path", { d: "m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21", key: "1xmnt7" }]
-];
-const Image = createLucideIcon("image", __iconNode$g);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$f = [
   ["rect", { width: "7", height: "9", x: "3", y: "3", rx: "1", key: "10lvy0" }],
   ["rect", { width: "7", height: "5", x: "14", y: "3", rx: "1", key: "16une8" }],
   ["rect", { width: "7", height: "9", x: "14", y: "12", rx: "1", key: "1hutg5" }],
   ["rect", { width: "7", height: "5", x: "3", y: "16", rx: "1", key: "ldoo1y" }]
 ];
-const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$f);
+const LayoutDashboard = createLucideIcon("layout-dashboard", __iconNode$g);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$e = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
-const LoaderCircle = createLucideIcon("loader-circle", __iconNode$e);
+const __iconNode$f = [["path", { d: "M21 12a9 9 0 1 1-6.219-8.56", key: "13zald" }]];
+const LoaderCircle = createLucideIcon("loader-circle", __iconNode$f);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$e = [
+  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
+  ["path", { d: "M21 12H9", key: "dn1m92" }],
+  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
+];
+const LogOut = createLucideIcon("log-out", __iconNode$e);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18585,18 +18613,6 @@ const LoaderCircle = createLucideIcon("loader-circle", __iconNode$e);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$d = [
-  ["path", { d: "m16 17 5-5-5-5", key: "1bji2h" }],
-  ["path", { d: "M21 12H9", key: "dn1m92" }],
-  ["path", { d: "M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4", key: "1uf3rs" }]
-];
-const LogOut = createLucideIcon("log-out", __iconNode$d);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$c = [
   [
     "path",
     {
@@ -18606,7 +18622,18 @@ const __iconNode$c = [
   ],
   ["circle", { cx: "12", cy: "10", r: "3", key: "ilqhr7" }]
 ];
-const MapPin = createLucideIcon("map-pin", __iconNode$c);
+const MapPin = createLucideIcon("map-pin", __iconNode$d);
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+const __iconNode$c = [
+  ["path", { d: "m3 11 18-5v12L3 14v-3z", key: "n962bs" }],
+  ["path", { d: "M11.6 16.8a3 3 0 1 1-5.8-1.6", key: "1yl0tm" }]
+];
+const Megaphone = createLucideIcon("megaphone", __iconNode$c);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18614,10 +18641,11 @@ const MapPin = createLucideIcon("map-pin", __iconNode$c);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$b = [
-  ["path", { d: "m3 11 18-5v12L3 14v-3z", key: "n962bs" }],
-  ["path", { d: "M11.6 16.8a3 3 0 1 1-5.8-1.6", key: "1yl0tm" }]
+  ["path", { d: "M4 12h16", key: "1lakjw" }],
+  ["path", { d: "M4 18h16", key: "19g7jn" }],
+  ["path", { d: "M4 6h16", key: "1o0s65" }]
 ];
-const Megaphone = createLucideIcon("megaphone", __iconNode$b);
+const Menu = createLucideIcon("menu", __iconNode$b);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18625,11 +18653,9 @@ const Megaphone = createLucideIcon("megaphone", __iconNode$b);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$a = [
-  ["path", { d: "M4 12h16", key: "1lakjw" }],
-  ["path", { d: "M4 18h16", key: "19g7jn" }],
-  ["path", { d: "M4 6h16", key: "1o0s65" }]
+  ["path", { d: "M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z", key: "1lielz" }]
 ];
-const Menu = createLucideIcon("menu", __iconNode$a);
+const MessageSquare = createLucideIcon("message-square", __iconNode$a);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -38304,8 +38330,8 @@ function applySettingDefaults(options, defaults) {
   else delete result.accessToken;
   return result;
 }
-function validateSupabaseUrl(supabaseUrl) {
-  const trimmedUrl = supabaseUrl === null || supabaseUrl === void 0 ? void 0 : supabaseUrl.trim();
+function validateSupabaseUrl(supabaseUrl2) {
+  const trimmedUrl = supabaseUrl2 === null || supabaseUrl2 === void 0 ? void 0 : supabaseUrl2.trim();
   if (!trimmedUrl) throw new Error("supabaseUrl is required.");
   if (!trimmedUrl.match(/^https?:\/\//i)) throw new Error("Invalid supabaseUrl: Must be a valid HTTP or HTTPS URL.");
   try {
@@ -38507,11 +38533,11 @@ var SupabaseClient = class {
   * const { data } = await supabase.from('profiles').select('*')
   * ```
   */
-  constructor(supabaseUrl, supabaseKey, options) {
+  constructor(supabaseUrl2, supabaseKey, options) {
     var _settings$auth$storag, _settings$global$head;
-    this.supabaseUrl = supabaseUrl;
+    this.supabaseUrl = supabaseUrl2;
     this.supabaseKey = supabaseKey;
-    const baseUrl = validateSupabaseUrl(supabaseUrl);
+    const baseUrl = validateSupabaseUrl(supabaseUrl2);
     if (!supabaseKey) throw new Error("supabaseKey is required.");
     this.realtimeUrl = new URL("realtime/v1", baseUrl);
     this.realtimeUrl.protocol = this.realtimeUrl.protocol.replace("http", "ws");
@@ -38717,8 +38743,8 @@ var SupabaseClient = class {
     }
   }
 };
-const createClient = (supabaseUrl, supabaseKey, options) => {
-  return new SupabaseClient(supabaseUrl, supabaseKey, options);
+const createClient = (supabaseUrl2, supabaseKey, options) => {
+  return new SupabaseClient(supabaseUrl2, supabaseKey, options);
 };
 function shouldShowDeprecationWarning() {
   if (typeof window !== "undefined") return false;
@@ -38731,10 +38757,9 @@ function shouldShowDeprecationWarning() {
   return parseInt(versionMatch[1], 10) <= 18;
 }
 if (shouldShowDeprecationWarning()) console.warn("⚠️  Node.js 18 and below are deprecated and will no longer be supported in future versions of @supabase/supabase-js. Please upgrade to Node.js 20 or later. For more information, visit: https://github.com/orgs/supabase/discussions/37217");
-{
-  console.warn("Supabase URL or Anon Key is missing. Check your .env file.");
-}
-const supabase = createClient("", "");
+const supabaseUrl = "https://fcevtzexgziwhquzubqf.supabase.co";
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZjZXZ0emV4Z3ppd2hxdXp1YnFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwNTc4OTIsImV4cCI6MjA5MjYzMzg5Mn0.-vXlbi_Iq2VV06RrbuFybOyVKyRQd7itSnFJ4JZNHIE";
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 function useInView(threshold = 0.15) {
   const ref = reactExports.useRef(null);
   const [visible, setVisible] = reactExports.useState(false);
@@ -38782,33 +38807,23 @@ function Navbar() {
               type: "button",
               "data-ocid": "navbar.logo_link",
               onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
-              className: "flex items-center gap-2 group",
+              className: "flex items-center gap-3 group",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "div",
-                  {
-                    className: `p-1.5 rounded-lg transition-smooth ${scrolled ? "bg-primary/10" : "bg-white/15"}`,
-                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                      GraduationCap,
-                      {
-                        className: `w-5 h-5 ${scrolled ? "text-primary" : "text-white"}`
-                      }
-                    )
-                  }
-                ),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "leading-tight", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "/logo.png", alt: "Shree Tuition Logo", className: "w-12 h-12 rounded-full border border-border bg-white shadow-subtle p-0.5 object-cover" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "leading-none text-left flex flex-col justify-center", children: [
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "span",
                     {
-                      className: `font-poppins font-700 text-sm sm:text-base font-bold tracking-tight ${scrolled ? "text-foreground" : "text-white"}`,
+                      className: `text-xl sm:text-2xl font-bold tracking-tight ${scrolled ? "text-primary" : "text-white"}`,
+                      style: { fontFamily: "'Playfair Display', serif", lineHeight: 1.1 },
                       children: "Shree Tuition"
                     }
                   ),
                   /* @__PURE__ */ jsxRuntimeExports.jsx(
                     "span",
                     {
-                      className: `hidden sm:block text-xs ${scrolled ? "text-muted-foreground" : "text-white/70"}`,
-                      children: "Mathematics, Chennai"
+                      className: `hidden sm:block text-[10px] mt-0.5 tracking-wider uppercase font-bold ${scrolled ? "text-primary/70" : "text-white/80"}`,
+                      children: "Quality Education for Success"
                     }
                   )
                 ] })
@@ -39059,18 +39074,18 @@ function SplitSection() {
           "div",
           {
             className: `transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`,
-            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative overflow-hidden rounded-3xl rounded-tl-[3rem] shadow-elevated", children: [
+            children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative rounded-2xl shadow-elevated overflow-hidden bg-white border border-border", children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx(
                 "img",
                 {
-                  src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=80",
+                  src: "/gallery/main.jpeg",
                   alt: "Students studying mathematics",
-                  className: "w-full h-[420px] lg:h-[500px] object-cover"
+                  className: "w-full h-auto object-contain"
                 }
               ),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute bottom-6 left-6 glassmorphic-dark rounded-2xl px-5 py-3", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white font-poppins font-bold text-2xl", children: "500+" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white/80 text-xs font-inter", children: "Students Mentored" })
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute bottom-4 left-4 glassmorphic-dark rounded-xl px-4 py-2 shadow-lg hidden sm:block", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white font-poppins font-bold text-xl", children: "500+" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white/80 text-[10px] font-inter uppercase tracking-wider", children: "Students Mentored" })
               ] })
             ] })
           }
@@ -39182,55 +39197,85 @@ function Gallery() {
   const { ref, visible } = useInView(0.1);
   const [data, setData] = reactExports.useState([]);
   const [loading, setLoading] = reactExports.useState(true);
+  const [lightbox, setLightbox] = reactExports.useState(null);
   reactExports.useEffect(() => {
     supabase.from("gallery").select("*").order("created_at", { ascending: false }).then((res) => {
       setData(res.data || []);
       setLoading(false);
     });
   }, []);
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(
     "section",
     {
       ref,
       id: "gallery",
       "data-ocid": "gallery.section",
       className: "py-24 bg-gradient-to-b from-muted/30 to-background",
-      children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+      children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs(
+            "div",
+            {
+              className: `text-center mb-14 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`,
+              children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-1 bg-accent rounded-full mx-auto mb-4" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl sm:text-4xl font-poppins font-bold text-foreground", children: "Our Learning Space" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-inter text-sm mt-3 max-w-md mx-auto", children: "A focused, comfortable environment designed for deep learning" })
+              ]
+            }
+          ),
+          loading ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center p-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 animate-spin text-primary" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "div",
+            {
+              className: `columns-2 md:columns-3 gap-4 space-y-4 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+              style: { transitionDelay: "150ms" },
+              children: data.map((img) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "div",
+                {
+                  className: "overflow-hidden rounded-2xl group cursor-pointer inline-block w-full border border-border shadow-subtle hover:shadow-elevated transition-shadow",
+                  onClick: () => setLightbox(img.image_url),
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "img",
+                    {
+                      src: img.image_url,
+                      alt: "Gallery image",
+                      className: "w-full h-auto object-cover transition-transform duration-500 group-hover:scale-[1.02]",
+                      loading: "lazy"
+                    }
+                  )
+                },
+                img.id
+              ))
+            }
+          )
+        ] }),
+        lightbox && /* @__PURE__ */ jsxRuntimeExports.jsxs(
           "div",
           {
-            className: `text-center mb-14 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`,
+            className: "fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4 cursor-pointer backdrop-blur-sm",
+            onClick: () => setLightbox(null),
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-1 bg-accent rounded-full mx-auto mb-4" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl sm:text-4xl font-poppins font-bold text-foreground", children: "Our Learning Space" }),
-              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-muted-foreground font-inter text-sm mt-3 max-w-md mx-auto", children: "A focused, comfortable environment designed for deep learning" })
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "button",
+                {
+                  className: "absolute top-6 right-6 text-white/70 hover:text-white transition-colors",
+                  "aria-label": "Close",
+                  children: /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-8 h-8" })
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "img",
+                {
+                  src: lightbox,
+                  className: "max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl",
+                  alt: "Full view",
+                  onClick: (e) => e.stopPropagation()
+                }
+              )
             ]
           }
-        ),
-        loading ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center p-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 animate-spin text-primary" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsx(
-          "div",
-          {
-            className: `grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[200px] transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
-            style: { transitionDelay: "150ms" },
-            children: data.map((img, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "div",
-              {
-                className: `overflow-hidden rounded-2xl group cursor-pointer ${i === 0 || i === 3 ? "row-span-2" : ""}`,
-                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-                  "img",
-                  {
-                    src: img.image_url,
-                    alt: "Gallery image",
-                    className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105",
-                    loading: "lazy"
-                  }
-                )
-              },
-              img.id
-            ))
-          }
         )
-      ] })
+      ]
     }
   );
 }
@@ -39553,9 +39598,9 @@ function Contact() {
 function Footer() {
   const year = (/* @__PURE__ */ new Date()).getFullYear();
   return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { "data-ocid": "footer.section", className: "bg-primary py-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-2 mb-3", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(GraduationCap, { className: "w-5 h-5 text-white/70" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white font-poppins font-semibold text-base", children: "Shree Tuition for Mathematics" })
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center justify-center gap-3 mb-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "/logo.png", alt: "Shree Tuition Logo", className: "w-14 h-14 rounded-full border border-white/20 bg-white p-0.5 shadow-elevated object-cover" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white font-bold text-2xl", style: { fontFamily: "'Playfair Display', serif" }, children: "Shree Tuition" })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white/60 font-inter text-xs mb-2", children: "PLOT NO 12, Natco Colony W St, Swaminathan Nagar, Kottivakkam, Chennai — 600041" }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-white/60 font-inter text-xs mb-5", children: "+91 97100 65653" }),
@@ -39594,8 +39639,7 @@ function Announcements() {
       setData(res.data || []);
     });
   }, []);
-  if (data.length === 0) return null;
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { ref, className: "py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-muted/20", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { ref, className: `py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-muted/20 ${data.length === 0 ? "hidden" : ""}`, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: `text-center mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-1 bg-accent rounded-full mx-auto mb-4" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-3xl font-poppins font-bold text-foreground mb-2 flex items-center justify-center gap-3", children: [
@@ -39603,7 +39647,7 @@ function Announcements() {
         " Latest Announcements"
       ] })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`, children: data.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white border text-left p-6 rounded-xl shadow-subtle shadow-card-hover group", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `grid grid-cols-1 md:grid-cols-3 gap-6 transition-all duration-700 delay-150 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`, children: data.map((item) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white border text-left p-6 rounded-xl shadow-subtle shadow-card-hover group border-l-4 border-l-primary", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs text-primary/80 font-semibold mb-2 block", children: new Date(item.created_at).toLocaleDateString() }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-poppins font-bold text-lg text-foreground mb-2", children: item.title }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "font-inter text-muted-foreground text-sm leading-relaxed", children: item.message })
@@ -42047,7 +42091,9 @@ function AdminLogin() {
   reactExports.useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       if (session) {
-        navigate("/admin/dashboard");
+        supabase.from("users").select("is_admin").eq("id", session.user.id).single().then(({ data }) => {
+          if (data == null ? void 0 : data.is_admin) navigate("/admin/dashboard");
+        });
       }
     });
   }, [navigate]);
@@ -42055,14 +42101,23 @@ function AdminLogin() {
     e.preventDefault();
     setLoading(true);
     setError("");
-    const { data, error: error2 } = await supabase.auth.signInWithPassword({
+    const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
       email,
       password
     });
-    if (error2) {
-      setError(error2.message);
+    if (authError) {
+      setError(authError.message);
       setLoading(false);
-    } else if (data.session) {
+      return;
+    }
+    if (authData.session) {
+      const { data: userData, error: userError } = await supabase.from("users").select("is_admin").eq("id", authData.session.user.id).single();
+      if (userError || !(userData == null ? void 0 : userData.is_admin)) {
+        await supabase.auth.signOut();
+        setError("You do not have administrative access. Access Denied.");
+        setLoading(false);
+        return;
+      }
       navigate("/admin/dashboard");
     }
   };
@@ -42127,19 +42182,22 @@ function GalleryManager() {
     try {
       setUploading(true);
       if (!e.target.files || e.target.files.length === 0) return;
-      const file = e.target.files[0];
-      const fileExt = file.name.split(".").pop();
-      const fileName = `${Math.random()}.${fileExt}`;
-      const filePath = `public/${fileName}`;
-      let { error: uploadError } = await supabase.storage.from("gallery").upload(filePath, file);
-      if (uploadError) throw uploadError;
-      const { data } = supabase.storage.from("gallery").getPublicUrl(filePath);
-      const { error: dbError } = await supabase.from("gallery").insert([{ image_url: data.publicUrl }]);
-      if (dbError) throw dbError;
+      const files = Array.from(e.target.files);
+      const uploadPromises = files.map(async (file) => {
+        const fileExt = file.name.split(".").pop();
+        const fileName = `${Math.random()}.${fileExt}`;
+        const filePath = `public/${fileName}`;
+        let { error: uploadError } = await supabase.storage.from("gallery").upload(filePath, file);
+        if (uploadError) throw uploadError;
+        const { data } = supabase.storage.from("gallery").getPublicUrl(filePath);
+        const { error: dbError } = await supabase.from("gallery").insert([{ image_url: data.publicUrl }]);
+        if (dbError) throw dbError;
+      });
+      await Promise.all(uploadPromises);
       fetchImages();
       e.target.value = "";
     } catch (error) {
-      alert("Error uploading image!");
+      alert("Error uploading images!");
       console.log(error);
     } finally {
       setUploading(false);
@@ -42164,8 +42222,8 @@ function GalleryManager() {
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: "cursor-pointer gradient-primary text-white font-semibold py-2 px-4 rounded-lg shadow-subtle hover:shadow-elevated transition-all flex items-center gap-2", children: [
         uploading ? /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Upload, { className: "w-4 h-4" }),
-        uploading ? "Uploading..." : "Upload Image",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("input", { type: "file", accept: "image/*", className: "hidden", disabled: uploading, onChange: uploadImage })
+        uploading ? "Uploading..." : "Upload Images",
+        /* @__PURE__ */ jsxRuntimeExports.jsx("input", { type: "file", multiple: true, accept: "image/*", className: "hidden", disabled: uploading, onChange: uploadImage })
       ] }) })
     ] }),
     loading ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center p-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 animate-spin text-primary" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-2 md:grid-cols-4 gap-4", children: [
@@ -42186,6 +42244,8 @@ function CourseManager() {
   const [description, setDescription] = reactExports.useState("");
   const [tag, setTag] = reactExports.useState("");
   const [imageUrl, setImageUrl] = reactExports.useState("");
+  const [imageFile, setImageFile] = reactExports.useState(null);
+  const [uploading, setUploading] = reactExports.useState(false);
   reactExports.useEffect(() => {
     fetchCourses();
   }, []);
@@ -42200,12 +42260,29 @@ function CourseManager() {
     setDescription("");
     setTag("");
     setImageUrl("");
+    setImageFile(null);
+    setUploading(false);
     setIsEditing(null);
     setIsOpen(false);
   };
   const handleSave = async (e) => {
     e.preventDefault();
-    const payload = { title, description, tag, image_url: imageUrl };
+    setUploading(true);
+    let finalImageUrl = imageUrl;
+    if (imageFile) {
+      const fileExt = imageFile.name.split(".").pop();
+      const fileName = `courses/${Math.random()}.${fileExt}`;
+      const { error: uploadError } = await supabase.storage.from("gallery").upload(fileName, imageFile);
+      if (!uploadError) {
+        const { data } = supabase.storage.from("gallery").getPublicUrl(fileName);
+        finalImageUrl = data.publicUrl;
+      } else {
+        alert("Image upload failed!");
+        setUploading(false);
+        return;
+      }
+    }
+    const payload = { title, description, tag, image_url: finalImageUrl };
     if (isEditing) {
       await supabase.from("courses").update(payload).eq("id", isEditing);
     } else {
@@ -42253,9 +42330,23 @@ function CourseManager() {
       /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleSave, className: "space-y-4 font-inter text-sm flex flex-col", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("input", { required: true, value: title, onChange: (e) => setTitle(e.target.value), placeholder: "Course Title", className: "px-4 py-2 border rounded-lg outline-none focus:border-primary" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("input", { required: true, value: tag, onChange: (e) => setTag(e.target.value), placeholder: "Tag (e.g. Board Exams Focus)", className: "px-4 py-2 border rounded-lg outline-none focus:border-primary" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("input", { value: imageUrl, onChange: (e) => setImageUrl(e.target.value), placeholder: "Image URL (optional)", className: "px-4 py-2 border rounded-lg outline-none focus:border-primary" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col gap-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("label", { className: "cursor-pointer bg-gray-50 hover:bg-gray-100 border border-dashed border-border text-center py-4 rounded-lg font-semibold transition-colors flex flex-col items-center justify-center text-muted-foreground gap-1", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(Upload, { className: "w-5 h-5 mb-1" }),
+            imageFile ? imageFile.name : imageUrl ? "Change Course Image" : "Click to Upload Course Image",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("input", { type: "file", accept: "image/*", className: "hidden", onChange: (e) => {
+              if (e.target.files && e.target.files[0]) {
+                setImageFile(e.target.files[0]);
+              }
+            } })
+          ] }),
+          imageUrl && !imageFile && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "text-xs text-primary font-medium text-center", children: "Currently using an existing image." })
+        ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("textarea", { required: true, value: description, onChange: (e) => setDescription(e.target.value), placeholder: "Course Description", rows: 3, className: "px-4 py-2 border rounded-lg outline-none focus:border-primary resize-none" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("button", { type: "submit", className: "w-full gradient-primary text-white py-2.5 rounded-lg font-bold", children: "Save Course" })
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("button", { type: "submit", disabled: uploading, className: "w-full gradient-primary text-white py-2.5 rounded-lg font-bold flex justify-center items-center gap-2", children: [
+          uploading && /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-4 h-4 animate-spin" }),
+          uploading ? "Uploading & Saving..." : "Save Course"
+        ] })
       ] })
     ] }) }),
     loading ? /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center p-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-8 h-8 animate-spin text-primary" }) }) : /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6", children: [
@@ -42370,18 +42461,96 @@ function AnnouncementManager() {
     ] })
   ] });
 }
+function DashboardHome() {
+  const [stats, setStats] = reactExports.useState({ gallery: 0, courses: 0, announcements: 0 });
+  const [loading, setLoading] = reactExports.useState(true);
+  reactExports.useEffect(() => {
+    const fetchStats = async () => {
+      const [gal, crs, ann] = await Promise.all([
+        supabase.from("gallery").select("*", { count: "exact", head: true }),
+        supabase.from("courses").select("*", { count: "exact", head: true }),
+        supabase.from("announcements").select("*", { count: "exact", head: true })
+      ]);
+      setStats({
+        gallery: gal.count || 0,
+        courses: crs.count || 0,
+        announcements: ann.count || 0
+      });
+      setLoading(false);
+    };
+    fetchStats();
+  }, []);
+  const cards = [
+    { title: "Registered Courses", value: stats.courses, icon: BookOpen },
+    { title: "Gallery Assets", value: stats.gallery, icon: Image },
+    { title: "Active Announcements", value: stats.announcements, icon: Megaphone }
+  ];
+  if (loading) return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-muted-foreground p-8 flex gap-3 items-center font-inter text-sm", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-5 h-5 animate-spin" }),
+    " Fetching latest analytics..."
+  ] });
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-10 border-b border-border pb-6", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-poppins font-semibold text-foreground tracking-tight", children: "Overview Dashboard" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-sm text-muted-foreground font-inter mt-1", children: "System intelligence and content management hub" })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-5 mb-12", children: cards.map((c) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white p-6 rounded-lg border border-border shadow-sm flex justify-between items-center bg-gradient-to-br from-white to-gray-50/50", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2", children: c.title }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-4xl font-inter font-bold text-foreground", children: c.value })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-4 bg-white rounded-md shadow-sm border border-border/50 text-foreground", children: /* @__PURE__ */ jsxRuntimeExports.jsx(c.icon, { className: "w-6 h-6", strokeWidth: 1.5 }) })
+    ] }, c.title)) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 flex items-center gap-2", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Activity, { className: "w-4 h-4" }),
+      " Management Shortcuts"
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-5", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/admin/dashboard/courses", className: "bg-white border border-border p-5 rounded-lg shadow-sm hover:border-foreground/30 hover:shadow-md transition-all flex items-center gap-4 group", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-md bg-gray-50 border border-border flex items-center justify-center text-foreground group-hover:bg-foreground group-hover:text-background transition-colors", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Plus, { className: "w-5 h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold font-inter text-sm text-foreground transition-colors", children: "New Course" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: "Publish a study program" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/admin/dashboard/gallery", className: "bg-white border border-border p-5 rounded-lg shadow-sm hover:border-foreground/30 hover:shadow-md transition-all flex items-center gap-4 group", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-md bg-gray-50 border border-border flex items-center justify-center text-foreground group-hover:bg-foreground group-hover:text-background transition-colors", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Upload, { className: "w-5 h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold font-inter text-sm text-foreground transition-colors", children: "Upload Assets" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: "Add photos to gallery" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(Link, { to: "/admin/dashboard/announcements", className: "bg-white border border-border p-5 rounded-lg shadow-sm hover:border-foreground/30 hover:shadow-md transition-all flex items-center gap-4 group", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-12 h-12 rounded-md bg-gray-50 border border-border flex items-center justify-center text-foreground group-hover:bg-foreground group-hover:text-background transition-colors", children: /* @__PURE__ */ jsxRuntimeExports.jsx(MessageSquare, { className: "w-5 h-5" }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold font-inter text-sm text-foreground transition-colors", children: "Push Notice" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-xs text-muted-foreground mt-1", children: "Broadcast announcement" })
+        ] })
+      ] })
+    ] })
+  ] });
+}
 function AdminDashboard() {
   const navigate = useNavigate();
   const location2 = useLocation();
   const [loading, setLoading] = reactExports.useState(true);
+  const [sidebarOpen, setSidebarOpen] = reactExports.useState(false);
   reactExports.useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    const checkSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
+        navigate("/admin/login");
+        return;
+      }
+      const { data, error } = await supabase.from("users").select("is_admin").eq("id", session.user.id).single();
+      if (error || !(data == null ? void 0 : data.is_admin)) {
+        await supabase.auth.signOut();
         navigate("/admin/login");
       } else {
         setLoading(false);
       }
-    });
+    };
+    checkSession();
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (event, session) => {
         if (event === "SIGNED_OUT" || !session) {
@@ -42395,7 +42564,10 @@ function AdminDashboard() {
     await supabase.auth.signOut();
   };
   if (loading) {
-    return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "min-h-screen flex items-center justify-center text-primary font-poppins", children: "Loading session..." });
+    return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen flex items-center justify-center text-muted-foreground", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(LoaderCircle, { className: "w-6 h-6 animate-spin mr-2" }),
+      " Authenticating..."
+    ] });
   }
   const navItems = [
     { name: "Dashboard", path: "/admin/dashboard", icon: LayoutDashboard },
@@ -42403,18 +42575,31 @@ function AdminDashboard() {
     { name: "Courses", path: "/admin/dashboard/courses", icon: BookOpen },
     { name: "Announcements", path: "/admin/dashboard/announcements", icon: Megaphone }
   ];
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex min-h-screen bg-gray-50", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsxs("aside", { className: "w-64 bg-white border-r border-border shadow-subtle flex flex-col", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-6 border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-xl font-poppins font-bold text-foreground text-primary", children: "Admin Panel" }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "flex-1 p-4 space-y-1", children: navItems.map((item) => {
+  const closeSidebar = () => setSidebarOpen(false);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex min-h-screen bg-gray-50/50 md:flex-row flex-col", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "md:hidden flex items-center justify-between px-6 py-4 bg-white border-b border-border z-20 sticky top-0", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-lg font-poppins font-bold text-foreground flex items-center gap-2", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-6 h-6 bg-foreground text-background flex items-center justify-center rounded uppercase text-[10px] tracking-tighter", children: "ST" }),
+        "Admin panel"
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: () => setSidebarOpen(!sidebarOpen), className: "p-1 hover:bg-gray-100 rounded-md transition-colors", children: sidebarOpen ? /* @__PURE__ */ jsxRuntimeExports.jsx(X, { className: "w-6 h-6 text-foreground" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(Menu, { className: "w-6 h-6 text-foreground" }) })
+    ] }),
+    sidebarOpen && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { onClick: closeSidebar, className: "md:hidden fixed inset-0 bg-background/80 backdrop-blur-sm z-30" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("aside", { className: `fixed md:relative inset-y-0 left-0 w-64 bg-white border-r border-border flex flex-col z-40 transform ${sidebarOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 transition-transform duration-300 ease-in-out`, children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden md:flex flex-col p-6 border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-xl font-poppins font-bold text-foreground flex items-center gap-3", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-8 h-8 font-poppins font-black bg-foreground text-background flex items-center justify-center rounded-md uppercase text-xs tracking-tighter", children: "ST" }),
+        "Admin panel"
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("nav", { className: "flex-1 p-4 space-y-1.5 overflow-y-auto", children: navItems.map((item) => {
         const isActive = location2.pathname === item.path;
         return /* @__PURE__ */ jsxRuntimeExports.jsxs(
           Link,
           {
             to: item.path,
-            className: `flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-inter font-medium ${isActive ? "bg-primary/10 text-primary" : "text-foreground/70 hover:bg-gray-100 hover:text-foreground"}`,
+            onClick: closeSidebar,
+            className: `flex items-center gap-3 px-4 py-3 rounded-lg transition-colors font-inter text-sm font-medium ${isActive ? "bg-gray-100 text-foreground border border-border/50" : "text-muted-foreground hover:bg-gray-50 hover:text-foreground border border-transparent"}`,
             children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx(item.icon, { className: `w-5 h-5 ${isActive ? "text-primary" : "text-muted-foreground"}` }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx(item.icon, { className: `w-4 h-4 ${isActive ? "text-foreground" : "text-muted-foreground"}` }),
               item.name
             ]
           },
@@ -42425,16 +42610,16 @@ function AdminDashboard() {
         "button",
         {
           onClick: handleLogout,
-          className: "flex items-center gap-2 w-full px-4 py-3 text-red-600 hover:bg-red-50 rounded-xl transition-colors font-inter font-medium",
+          className: "flex items-center gap-2 w-full px-4 py-2.5 text-red-600 hover:bg-red-50 rounded-lg transition-colors font-inter text-sm font-medium",
           children: [
-            /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { className: "w-5 h-5" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(LogOut, { className: "w-4 h-4" }),
             "Sign Out"
           ]
         }
       ) })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("main", { className: "flex-1 overflow-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx("h1", { className: "text-2xl font-poppins font-bold text-foreground", children: "Welcome to Admin Dashboard. Please select an option from the sidebar." }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("main", { className: "flex-1 overflow-auto h-screen md:h-auto pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "p-6 md:p-10 mx-auto max-w-7xl", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(DashboardHome, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "gallery", element: /* @__PURE__ */ jsxRuntimeExports.jsx(GalleryManager, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "courses", element: /* @__PURE__ */ jsxRuntimeExports.jsx(CourseManager, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "announcements", element: /* @__PURE__ */ jsxRuntimeExports.jsx(AnnouncementManager, {}) })
