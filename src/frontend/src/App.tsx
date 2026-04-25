@@ -465,8 +465,13 @@ function Programs() {
               style={{ transitionDelay: `${i * 150 + 100}ms` }}
             >
               {p.image_url && (
-                <div className="w-full h-48 overflow-hidden">
-                  <img src={p.image_url} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                <div className="w-full h-48 overflow-hidden bg-gray-50 border-b border-border">
+                  <img
+                    src={p.image_url}
+                    alt={p.title}
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
                 </div>
               )}
               <div className="gradient-primary px-6 py-4 flex items-center gap-4">
