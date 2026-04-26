@@ -197,75 +197,74 @@ function Hero() {
     <section
       id="hero"
       data-ocid="hero.section"
-      className="relative h-screen min-h-[600px] md:h-screen flex items-end pb-20 md:pb-28 overflow-hidden"
+      className="relative h-[80vh] min-h-[500px] md:h-screen flex items-center pt-20 overflow-hidden"
     >
       {/* Background image */}
       <div className="absolute inset-0">
         <img
           src="/gallery/banner.png"
-          alt="Mathematics classroom"
-          className="w-full h-full object-cover"
+          alt="Shree Tuition Banner"
+          className="w-full h-full object-cover object-top"
           loading="eager"
         />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 navy-overlay" />
-        {/* extra top gradient for navbar readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        {/* Rating badge */}
         <div
-          className="inline-flex items-center gap-2 glassmorphic-dark rounded-full px-4 py-2 mb-6"
-          style={{ animation: "fade-in-up 0.5s ease-out both" }}
+          className="max-w-4xl"
+          style={{ animation: "fade-in-up 0.8s ease-out both" }}
         >
-          <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-          <span className="text-white text-sm font-semibold font-inter">
-            4.9 from 18+ Reviews
-          </span>
-        </div>
-
-        {/* Headline */}
-        <h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-white leading-tight mb-4 max-w-4xl"
-          style={{ animation: "fade-in-up 0.6s 0.1s ease-out both" }}
-        >
-          Best Tuition Centre for
-          <br />
-          <span className="text-accent">Academic Excellence</span>
-        </h1>
-
-        {/* Subheading */}
-        <p
-          className="text-white/80 text-lg sm:text-xl font-inter mb-8 max-w-xl"
-          style={{ animation: "fade-in-up 0.6s 0.2s ease-out both" }}
-        >
-          Strong fundamentals. Better results. Confident students.
-        </p>
-
-        {/* CTA Buttons */}
-        <div
-          className="flex flex-col sm:flex-row gap-3"
-          style={{ animation: "fade-in-up 0.6s 0.3s ease-out both" }}
-        >
-          <a
-            href={WA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-ocid="hero.whatsapp_button"
-            className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold font-poppins text-base px-7 py-3.5 rounded-xl transition-smooth shadow-elevated"
+          {/* Rating badge */}
+          <div
+            className="inline-flex items-center gap-2 bg-black/40 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/10"
           >
-            <FaWhatsapp className="w-5 h-5" />
-            Chat on WhatsApp
-          </a>
-          <a
-            href="tel:+919710065653"
-            data-ocid="hero.call_button"
-            className="flex items-center justify-center gap-2 border-2 border-white/60 text-white hover:bg-white/10 font-semibold font-poppins text-base px-7 py-3.5 rounded-xl transition-smooth"
-          >
-            <Phone className="w-5 h-5" />
-            Call Now
-          </a>
+            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+            <span className="text-white text-sm font-semibold font-inter">
+              4.8 from 19 Reviews
+            </span>
+          </div>
+
+          {/* Headline */}
+          <div className="mb-10">
+            <h1
+              className="text-3xl sm:text-6xl md:text-7xl font-poppins font-bold leading-[1.05] tracking-tight mb-6"
+            >
+              <span className="text-white block">Best Tuition Centre for</span>
+              <span className="text-[#00E5FF]">Academic Excellence</span>
+            </h1>
+
+            {/* Subheading */}
+            <p
+              className="text-white/90 text-lg sm:text-xl md:text-2xl font-inter max-w-2xl leading-relaxed"
+            >
+              Strong fundamentals. Better results. Confident students.
+            </p>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href={WA_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-ocid="hero.whatsapp_button"
+              className="flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white font-bold font-poppins text-lg px-8 py-4 rounded-xl transition-smooth shadow-lg"
+            >
+              <FaWhatsapp className="w-6 h-6" />
+              Chat on WhatsApp
+            </a>
+            <a
+              href="tel:+919710065653"
+              data-ocid="hero.call_button"
+              className="flex items-center justify-center gap-2 border-2 border-white/60 text-white hover:bg-white/10 font-bold font-poppins text-lg px-8 py-4 rounded-xl transition-smooth"
+            >
+              <Phone className="w-5 h-5" />
+              Call Now
+            </a>
+          </div>
         </div>
       </div>
     </section>

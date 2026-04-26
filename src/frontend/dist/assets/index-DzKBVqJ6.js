@@ -18505,7 +18505,7 @@ const createLucideIcon = (iconName, iconNode) => {
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$l = [
+const __iconNode$k = [
   [
     "path",
     {
@@ -18514,14 +18514,14 @@ const __iconNode$l = [
     }
   ]
 ];
-const Activity = createLucideIcon("activity", __iconNode$l);
+const Activity = createLucideIcon("activity", __iconNode$k);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
  * This source code is licensed under the ISC license.
  * See the LICENSE file in the root directory of this source tree.
  */
-const __iconNode$k = [
+const __iconNode$j = [
   ["path", { d: "M12 7v14", key: "1akyts" }],
   [
     "path",
@@ -18531,18 +18531,7 @@ const __iconNode$k = [
     }
   ]
 ];
-const BookOpen = createLucideIcon("book-open", __iconNode$k);
-/**
- * @license lucide-react v0.511.0 - ISC
- *
- * This source code is licensed under the ISC license.
- * See the LICENSE file in the root directory of this source tree.
- */
-const __iconNode$j = [
-  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
-  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
-];
-const Clock = createLucideIcon("clock", __iconNode$j);
+const BookOpen = createLucideIcon("book-open", __iconNode$j);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -18550,17 +18539,10 @@ const Clock = createLucideIcon("clock", __iconNode$j);
  * See the LICENSE file in the root directory of this source tree.
  */
 const __iconNode$i = [
-  [
-    "path",
-    {
-      d: "M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z",
-      key: "j76jl0"
-    }
-  ],
-  ["path", { d: "M22 10v6", key: "1lu8f3" }],
-  ["path", { d: "M6 12.5V16a6 3 0 0 0 12 0v-3.5", key: "1r8lef" }]
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["polyline", { points: "12 6 12 12 16 14", key: "68esgv" }]
 ];
-const GraduationCap = createLucideIcon("graduation-cap", __iconNode$i);
+const Clock = createLucideIcon("clock", __iconNode$i);
 /**
  * @license lucide-react v0.511.0 - ISC
  *
@@ -38937,59 +38919,57 @@ function Hero() {
     {
       id: "hero",
       "data-ocid": "hero.section",
-      className: "relative h-screen min-h-[600px] md:h-screen flex items-end pb-20 md:pb-28 overflow-hidden",
+      className: "relative h-[80vh] min-h-[500px] md:h-screen flex items-center pt-20 overflow-hidden",
       children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "absolute inset-0", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
-              src: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80",
-              alt: "Mathematics classroom",
-              className: "w-full h-full object-cover",
+              src: "/gallery/banner.png",
+              alt: "Shree Tuition Banner",
+              className: "w-full h-full object-cover object-top",
               loading: "eager"
             }
           ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 navy-overlay" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-transparent" })
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-black/50" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 navy-overlay" })
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              className: "inline-flex items-center gap-2 glassmorphic-dark rounded-full px-4 py-2 mb-6",
-              style: { animation: "fade-in-up 0.5s ease-out both" },
-              children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx(Star, { className: "w-4 h-4 fill-yellow-400 text-yellow-400" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white text-sm font-semibold font-inter", children: "4.9 from 18+ Reviews" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "h1",
-            {
-              className: "text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-poppins font-bold text-white leading-tight mb-4 max-w-4xl",
-              style: { animation: "fade-in-up 0.6s 0.1s ease-out both" },
-              children: [
-                "Best Tuition Centre for",
-                /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-accent", children: "Academic Excellence" })
-              ]
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "p",
-            {
-              className: "text-white/80 text-lg sm:text-xl font-inter mb-8 max-w-xl",
-              style: { animation: "fade-in-up 0.6s 0.2s ease-out both" },
-              children: "Strong fundamentals. Better results. Confident students."
-            }
-          ),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs(
-            "div",
-            {
-              className: "flex flex-col sm:flex-row gap-3",
-              style: { animation: "fade-in-up 0.6s 0.3s ease-out both" },
-              children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "div",
+          {
+            className: "max-w-4xl",
+            style: { animation: "fade-in-up 0.8s ease-out both" },
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                "div",
+                {
+                  className: "inline-flex items-center gap-2 bg-black/40 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/10",
+                  children: [
+                    /* @__PURE__ */ jsxRuntimeExports.jsx(Star, { className: "w-4 h-4 fill-yellow-400 text-yellow-400" }),
+                    /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white text-sm font-semibold font-inter", children: "4.8 from 19 Reviews" })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mb-10", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                  "h1",
+                  {
+                    className: "text-3xl sm:text-6xl md:text-7xl font-poppins font-bold leading-[1.05] tracking-tight mb-6",
+                    children: [
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-white block", children: "Best Tuition Centre for" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#00E5FF]", children: "Academic Excellence" })
+                    ]
+                  }
+                ),
+                /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "p",
+                  {
+                    className: "text-white/90 text-lg sm:text-xl md:text-2xl font-inter max-w-2xl leading-relaxed",
+                    children: "Strong fundamentals. Better results. Confident students."
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsxs(
                   "a",
                   {
@@ -38997,9 +38977,9 @@ function Hero() {
                     target: "_blank",
                     rel: "noopener noreferrer",
                     "data-ocid": "hero.whatsapp_button",
-                    className: "flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold font-poppins text-base px-7 py-3.5 rounded-xl transition-smooth shadow-elevated",
+                    className: "flex items-center justify-center gap-2 bg-[#22C55E] hover:bg-[#16A34A] text-white font-bold font-poppins text-lg px-8 py-4 rounded-xl transition-smooth shadow-lg",
                     children: [
-                      /* @__PURE__ */ jsxRuntimeExports.jsx(FaWhatsapp, { className: "w-5 h-5" }),
+                      /* @__PURE__ */ jsxRuntimeExports.jsx(FaWhatsapp, { className: "w-6 h-6" }),
                       "Chat on WhatsApp"
                     ]
                   }
@@ -39009,17 +38989,17 @@ function Hero() {
                   {
                     href: "tel:+919710065653",
                     "data-ocid": "hero.call_button",
-                    className: "flex items-center justify-center gap-2 border-2 border-white/60 text-white hover:bg-white/10 font-semibold font-poppins text-base px-7 py-3.5 rounded-xl transition-smooth",
+                    className: "flex items-center justify-center gap-2 border-2 border-white/60 text-white hover:bg-white/10 font-bold font-poppins text-lg px-8 py-4 rounded-xl transition-smooth",
                     children: [
                       /* @__PURE__ */ jsxRuntimeExports.jsx(Phone, { className: "w-5 h-5" }),
                       "Call Now"
                     ]
                   }
                 )
-              ]
-            }
-          )
-        ] })
+              ] })
+            ]
+          }
+        ) })
       ]
     }
   );
@@ -39173,7 +39153,15 @@ function Programs() {
             className: `group bg-card border border-border rounded-2xl overflow-hidden shadow-subtle hover:shadow-card-hover hover:-translate-y-1 hover:border-primary/30 transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
             style: { transitionDelay: `${i * 150 + 100}ms` },
             children: [
-              p.image_url && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-48 overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: p.image_url, alt: p.title, className: "w-full h-full object-cover transition-transform duration-500 group-hover:scale-105", loading: "lazy" }) }),
+              p.image_url && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-48 overflow-hidden bg-gray-50 border-b border-border", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "img",
+                {
+                  src: p.image_url,
+                  alt: p.title,
+                  className: "w-full h-full object-contain transition-transform duration-500 group-hover:scale-105",
+                  loading: "lazy"
+                }
+              ) }),
               /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "gradient-primary px-6 py-4 flex items-center gap-4", children: [
                 /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(BookOpen, { className: "w-5 h-5 text-white" }) }),
                 /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
@@ -42122,7 +42110,7 @@ function AdminLogin() {
     }
   };
   return /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "min-h-screen flex items-center justify-center bg-gray-50 bg-gradient-to-br from-primary/5 via-background to-accent/5", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-md w-full bg-white p-8 rounded-2xl shadow-elevated border border-border mx-4", children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center mb-6", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(GraduationCap, { className: "w-7 h-7 text-primary" }) }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center mb-1", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: "/logo.png", alt: "Shree Tuition Logo", className: "w-24 h-24 rounded-full border border-border p-1 bg-white shadow-sm object-cover" }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-center text-2xl font-poppins font-bold text-foreground mb-6", children: "Admin Login" }),
     error && /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-red-50 text-red-600 p-3 rounded-lg text-sm mb-4 font-inter text-center", children: error }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { onSubmit: handleLogin, className: "space-y-5", children: [
