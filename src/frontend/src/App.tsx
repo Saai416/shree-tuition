@@ -202,7 +202,7 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1920&q=80"
+          src="/gallery/banner.png"
           alt="Mathematics classroom"
           className="w-full h-full object-cover"
           loading="eager"
