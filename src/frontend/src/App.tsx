@@ -193,6 +193,19 @@ function Navbar() {
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 function Hero() {
+  const [bannerUrl, setBannerUrl] = useState<string>("/gallery/banner.png");
+
+  useEffect(() => {
+    supabase
+      .from('site_settings')
+      .select('value')
+      .eq('key', 'hero_banner_url')
+      .single()
+      .then(res => {
+        if (res.data) setBannerUrl(res.data.value);
+      });
+  }, []);
+
   return (
     <section
       id="hero"
@@ -202,7 +215,7 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/gallery/banner.png"
+          src={bannerUrl}
           alt="Shree Tuition Banner"
           className="w-full h-full object-cover object-top"
           loading="eager"

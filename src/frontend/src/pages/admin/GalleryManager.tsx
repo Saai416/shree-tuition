@@ -6,10 +6,22 @@ export default function GalleryManager() {
     const [images, setImages] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
     const [uploading, setUploading] = useState(false);
+    const [bannerUrl, setBannerUrl] = useState<string>('');
+    const [updatingBanner, setUpdatingBanner] = useState(false);
 
     useEffect(() => {
         fetchImages();
+        fetchBanner();
     }, []);
+
+    const fetchBanner = async () => {
+        const { data, error } = await supabase
+            .from('site_settings')
+            .select('value')
+            .eq('key', 'hero_banner_url')
+            .single();
+        if (data) setBannerUrl(data.value);
+    };
 
     const fetchImages = async () => {
         const { data, error } = await supabase.from('gallery').select('*').order('created_at', { ascending: false });
@@ -17,7 +29,41 @@ export default function GalleryManager() {
         setLoading(false);
     };
 
+    const updateBanner = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        try {
+            setUpdatingBanner(true);
+            if (!e.target.files || e.target.files.length === 0) return;
+
+            const file = e.target.files[0];
+            const fileExt = file.name.split('.').pop();
+            const fileName = `banner-${Math.random()}.${fileExt}`;
+            const filePath = `public/${fileName}`;
+
+            let { error: uploadError } = await supabase.storage.from('gallery').upload(filePath, file);
+            if (uploadError) throw uploadError;
+
+            const { data } = supabase.storage.from('gallery').getPublicUrl(filePath);
+            const newBannerUrl = data.publicUrl;
+
+            const { error: dbError } = await supabase
+                .from('site_settings')
+                .upsert({ key: 'hero_banner_url', value: newBannerUrl, updated_at: new Date().toISOString() });
+
+            if (dbError) throw dbError;
+
+            setBannerUrl(newBannerUrl);
+            alert('Banner updated successfully!');
+            e.target.value = '';
+        } catch (error) {
+            alert('Error updating banner!');
+            console.log(error);
+        } finally {
+            setUpdatingBanner(false);
+        }
+    };
+
     const uploadImage = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        // ... (rest of the code)
         try {
             setUploading(true);
             if (!e.target.files || e.target.files.length === 0) return;
@@ -63,6 +109,35 @@ export default function GalleryManager() {
 
     return (
         <div>
+            {/* Hero Banner Section */}
+            <div className="bg-white rounded-2xl border border-border overflow-hidden shadow-subtle mb-10">
+                <div className="gradient-primary px-6 py-4 flex items-center justify-between">
+                    <div>
+                        <h3 className="text-white font-poppins font-bold text-lg">Hero Section Banner</h3>
+                        <p className="text-white/70 text-sm font-inter">This image appears at the top of your homepage.</p>
+                    </div>
+                    <label className="cursor-pointer bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-4 rounded-lg transition-all flex items-center gap-2">
+                        {updatingBanner ? <Loader2 className="w-4 h-4 animate-spin" /> : <Upload className="w-4 h-4" />}
+                        {updatingBanner ? 'Updating...' : 'Change Banner'}
+                        <input type="file" accept="image/*" className="hidden" disabled={updatingBanner} onChange={updateBanner} />
+                    </label>
+                </div>
+                <div className="p-4 bg-gray-50 flex justify-center">
+                    {bannerUrl ? (
+                        <div className="relative w-full max-w-4xl h-48 rounded-xl overflow-hidden shadow-inner border border-border">
+                            <img src={bannerUrl} alt="Hero Banner Preview" className="w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-black/10 flex items-end p-4">
+                                <span className="bg-black/40 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded">Live Preview</span>
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="w-full h-48 border-2 border-dashed border-border rounded-xl flex items-center justify-center text-muted-foreground font-inter">
+                            No custom banner set. Using default image.
+                        </div>
+                    )}
+                </div>
+            </div>
+
             <div className="flex justify-between items-center mb-6">
                 <div>
                     <h2 className="text-2xl font-poppins font-bold text-foreground">Gallery Management</h2>
